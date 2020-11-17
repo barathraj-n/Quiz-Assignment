@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #659DBD;
+    font-family: 'Roboto', sans-serif;
+}
+
+.custom-style{
+    margin: auto;
+    margin-top: 35px;
+    padding: 30px;
+    max-width: 90%;
+    text-align: center;
+    border: 3px solid #000000;
+    border-radius: 5px;
+    background-color: #BC986A;
+}
+.custom-style h1{
+    font-size: 22px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.custom-style h2{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.custom-style h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.custom-style .five-button {
+    margin-bottom: 5px;
+}
+
+.custom-style .five-button .quiz-button {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+.button {
+    padding: 15px 35px;
+    background-color: #659DBD;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.instructions{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.quiz-view .q-number {
+    text-align: left;
+    border-bottom: 1px solid #000000;
+    font-weight: 450;
+}
+
+.quiz-view .q-text {
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.quiz-view .option-view {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.quiz-view .option {
+    background-color: #85b6d3;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-weight: 450;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.quiz-view .answer {
+    font-weight: 600;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.quiz-view .submit-button {
+    text-align: right;
+}
+
+.result-view h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.result-view table {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-size: 16px;
+    border: 2px solid #000000;
+}
+
+.result-view table td {
+    width: 75%;
+    padding: 5px;
+    font-weight: 500;
+    border: 1px solid #000000;
+}
+
+.main-view.remove {
+    display: none;
+}
+
+.quiz-view.remove {
+    display: none;
+}
+
+.result-view.remove {
+    display: none;
+}
+
+ @media (min-width:200) and (max-width: 550px) {
+
+    .custom-style h1 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .custom-style h2{
+        font-size: 18px;
+        font-weight: 550;
+    }
+
+    .instructions{
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Quiz</title>
+</head>
+
+<body>
+
+    <div class="main-view custom-style">
+        <h1>Quiz Mat. Hr. Sec. School</h1>
+        <h2> Quiz Instructions </h2>
+        <ul class="instructions">
+            <li>There are 5 available quiz below where you can take one quiz at a time.</li>
+            <li>Each quiz consists of 10 questions.</li>
+            <li>For each correct answer you will be awarded 1 mark.</li>
+            <li>After clicking "Start the Quiz" button your timer will start and at the end of the quiz you can see the
+                time taken in seconds to complete the quiz.</li>
+            <li>Questions which are not attempted will be considered as wrong answers.</li>
+            <li>After finishing the quiz you can see your results in quiz results page.</li>
+            <li>By Clicking on "End Quiz" you will be redirected to the starting page.</li>
+            <li>You can take other available quiz in the same manner or again try the same quiz.</li>
+        </ul>
+        <div>
+            <h4>Available Quiz</h4>
+        </div>
+        <div class="five-button">
+            <div><button class="button quiz-button" onclick="startQuiz()">Start Current Affairs quiz</button></div>
+            <div><button class="button quiz-button" onclick="startQuizScience()">Start Science quiz</button></div>
+            <div><button class="button quiz-button" onclick="startQuizSocial()">Start Social quiz</button></div>
+            <div><button class="button quiz-button" onclick="startQuizPhysics()">Start Physics quiz</button></div>
+            <div><button class="button quiz-button" onclick="startQuizBiology()">Start Biology quiz</button></div>
+        </div>
+    </div>
+
+    <div class="quiz-view custom-style remove">
+        <div class="q-number">
+        </div>
+        <div class="q-text">
+        </div>
+        <div class="option-view">
+            <div class="option"></div>
+            <div class="option"></div>
+            <div class="option"></div>
+            <div class="option"></div>
+        </div>
+        <div class="answer">
+        </div>
+        <div class="submit-button">
+            <button class="button" onclick="submit()">Submit</button>
+        </div>
+    </div>
+
+    <div class="result-view custom-style remove">
+        <h3>Quiz Result</h3>
+        <table>
+            <tr>
+                <td>Total Questions</td>
+                <td><span class="total-questions"></span></td>
+            </tr>
+            <tr>
+                <td>Correct Answers</td>
+                <td><span class="correct"></span></td>
+            </tr>
+            <tr>
+                <td>Wrong Answers</td>
+                <td><span class="wrong"></span></td>
+            </tr>
+            <tr>
+                <td>Time Taken</td>
+                <td><span class="time-taken"></span></td>
+            </tr>
+            <tr>
+                <td>Percentage</td>
+                <td><span class="percentage"></span></td>
+            </tr>
+            <tr>
+                <td>Total marks</td>
+                <td><span class="total-marks"></span></td>
+            </tr>
+        </table>
+        <button class="button" onclick="endQuiz()">End Quiz</button>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/Science.js"></script>
+    <script src="js/Social.js"></script>
+    <script src="js/Physics.js"></script>
+    <script src="js/Biology.js"></script>
+    <script src="js/question.js"></script>
+
+</body>
+
+</html>
